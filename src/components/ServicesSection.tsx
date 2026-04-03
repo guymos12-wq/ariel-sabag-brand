@@ -4,18 +4,18 @@ import { useInView } from "@/hooks/useInView";
 const services = [
   {
     icon: Scissors,
-    title: "Haircut",
-    description: "Precision cuts tailored to your face shape and personal style. From classic to contemporary.",
+    title: "תספורת",
+    description: "תספורות מדויקות המותאמות לצורת הפנים ולסגנון האישי שלך. מקלאסי ועד עכשווי.",
   },
   {
     icon: Sparkles,
-    title: "Beard Trimming",
-    description: "Expert beard shaping and trimming to keep your facial hair looking sharp and well-groomed.",
+    title: "עיצוב זקן",
+    description: "עיצוב וגילוח זקן מקצועי כדי לשמור על מראה חד ומטופח.",
   },
   {
     icon: Crown,
-    title: "Full Grooming",
-    description: "The complete experience — haircut, beard styling, and finishing touches for a polished look.",
+    title: "טיפוח מלא",
+    description: "החוויה המלאה — תספורת, עיצוב זקן וגימורים למראה מושלם ומלוטש.",
   },
 ];
 
@@ -25,9 +25,9 @@ const ServicesSection = () => {
   return (
     <section id="services" className="section-padding" ref={ref}>
       <div className="container mx-auto text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-primary font-body mb-4">Services</p>
+        <p className="text-sm tracking-[0.3em] text-primary font-body mb-4">שירותים</p>
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-          What We <span className="gold-gradient-text">Offer</span>
+          מה אנחנו <span className="gold-gradient-text">מציעים</span>
         </h2>
         <div className="gold-line mx-auto mb-12" />
 

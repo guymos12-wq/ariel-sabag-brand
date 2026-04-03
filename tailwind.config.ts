@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Playfair Display', 'serif'],
-        body: ['Raleway', 'sans-serif'],
+        heading: ['Frank Ruhl Libre', 'serif'],
+        body: ['Heebo', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

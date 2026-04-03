@@ -4,9 +4,9 @@ import { useInView } from "@/hooks/useInView";
 const INSTAGRAM_URL = "https://www.instagram.com/a_sabag_barbershop/";
 
 const contactItems = [
-  { icon: Phone, label: "Phone", value: "050-123-4567" },
-  { icon: MapPin, label: "Address", value: "123 Main Street, Tel Aviv" },
-  { icon: Clock, label: "Hours", value: "Sun–Thu 9:00–20:00 | Fri 9:00–14:00" },
+  { icon: Phone, label: "טלפון", value: "050-123-4567" },
+  { icon: MapPin, label: "כתובת", value: "רחוב הראשי 123, תל אביב" },
+  { icon: Clock, label: "שעות פעילות", value: "א׳–ה׳ 9:00–20:00 | ו׳ 9:00–14:00" },
 ];
 
 const ContactSection = () => {
@@ -15,9 +15,9 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding" ref={ref}>
       <div className="container mx-auto text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-primary font-body mb-4">Contact</p>
+        <p className="text-sm tracking-[0.3em] text-primary font-body mb-4">צור קשר</p>
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-          Get in <span className="gold-gradient-text">Touch</span>
+          בואו <span className="gold-gradient-text">נדבר</span>
         </h2>
         <div className="gold-line mx-auto mb-12" />
 
@@ -25,7 +25,7 @@ const ContactSection = () => {
           {contactItems.map((c) => (
             <div key={c.label} className="flex flex-col items-center gap-3">
               <c.icon className="w-8 h-8 text-primary" />
-              <p className="text-sm uppercase tracking-widest text-foreground/50">{c.label}</p>
+              <p className="text-sm tracking-widest text-foreground/50">{c.label}</p>
               <p className="text-foreground/80 text-sm">{c.value}</p>
             </div>
           ))}
@@ -35,7 +35,7 @@ const ContactSection = () => {
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-primary hover:brightness-125 transition-all text-sm uppercase tracking-widest"
+          className="inline-flex items-center gap-2 text-primary hover:brightness-125 transition-all text-sm tracking-widest"
         >
           <Instagram className="w-5 h-5" />
           @a_sabag_barbershop

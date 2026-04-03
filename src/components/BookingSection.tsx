@@ -12,19 +12,19 @@ const BookingSection = () => {
       <div className={`relative z-10 container mx-auto text-center max-w-2xl ${inView ? "animate-fade-in" : "opacity-0"}`}>
         <CalendarDays className="w-12 h-12 text-primary mx-auto mb-6" />
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">
-          Book Your <span className="gold-gradient-text">Next Cut</span>
+          קבעו את <span className="gold-gradient-text">התור הבא</span>
         </h2>
         <div className="gold-line mx-auto mb-6" />
         <p className="text-foreground/60 mb-10 text-lg">
-          Ready for a fresh look? Schedule your appointment in seconds.
+          מוכנים למראה חדש? קבעו תור בשניות.
         </p>
         <a
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-12 py-5 text-base font-semibold uppercase tracking-[0.2em] bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300"
+          className="inline-block px-12 py-5 text-base font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300"
         >
-          Book an Appointment
+          קבע תור עכשיו
         </a>
       </div>
     </section>

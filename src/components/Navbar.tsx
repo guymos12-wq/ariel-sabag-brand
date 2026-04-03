@@ -4,12 +4,12 @@ import { Menu, X } from "lucide-react";
 const BOOKING_URL = "https://calendar.app.google/v6WZoeHaFuPQ1jsN7";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "בית", href: "#home" },
+  { label: "אודות", href: "#about" },
+  { label: "שירותים", href: "#services" },
+  { label: "גלריה", href: "#gallery" },
+  { label: "המלצות", href: "#testimonials" },
+  { label: "צור קשר", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -30,16 +30,15 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#home" className="font-heading text-xl md:text-2xl tracking-wider gold-gradient-text">
-          ARIEL SABAG
+          אריאל סבג
         </a>
 
-        {/* Desktop */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-body tracking-widest uppercase text-foreground/70 hover:text-primary transition-colors duration-200"
+              className="text-sm font-body tracking-wide text-foreground/70 hover:text-primary transition-colors duration-200"
             >
               {l.label}
             </a>
@@ -48,23 +47,21 @@ const Navbar = () => {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-4 px-6 py-2.5 text-sm font-semibold uppercase tracking-widest bg-primary text-primary-foreground hover:brightness-110 transition-all duration-200"
+            className="mr-4 px-6 py-2.5 text-sm font-semibold tracking-wide bg-primary text-primary-foreground hover:brightness-110 transition-all duration-200"
           >
-            Book Now
+            קבע תור
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden text-foreground"
-          aria-label="Toggle menu"
+          aria-label="תפריט"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="lg:hidden bg-background/98 backdrop-blur-md border-t border-border animate-fade-in">
           <div className="container mx-auto py-6 flex flex-col gap-4">
@@ -73,7 +70,7 @@ const Navbar = () => {
                 key={l.href}
                 href={l.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-sm font-body tracking-widest uppercase text-foreground/70 hover:text-primary transition-colors py-2"
+                className="text-sm font-body tracking-wide text-foreground/70 hover:text-primary transition-colors py-2"
               >
                 {l.label}
               </a>
@@ -82,9 +79,9 @@ const Navbar = () => {
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest bg-primary text-primary-foreground text-center"
+              className="mt-2 px-6 py-3 text-sm font-semibold tracking-wide bg-primary text-primary-foreground text-center"
             >
-              Book Now
+              קבע תור
             </a>
           </div>
         </div>
