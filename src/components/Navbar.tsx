@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
-const BOOKING_URL = "https://l.instagram.com/?u=https%3A%2F%2Fcalendar.app.google%2Fv6WZoeHaFuPQ1jsN7%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnxs7JORNFwg6I_KlbMMQsCRKwe6ipeWlvf7KziEDJtkKY7EJhP5rMV7Z6kes_aem_-q2Yn2Hvw7F6BHWjrZLCWQ&e=AT4JC79pbocBNIWEVXr_e0hewO7PPlr8UaNNspXzpGKR55MFbEq8E58DwfRAITb-VNahe36RkK92oPzMx2iHaGBoLRN_eLmJmbFfwYxlNXf_2fYR8U2cY-YS3w";
+import { BOOKING_URL } from "@/lib/site-links";
 
 const navLinks = [
   { label: "בית", href: "#home" },
@@ -45,8 +44,6 @@ const Navbar = () => {
           ))}
           <a
             href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mr-4 px-6 py-2.5 text-sm font-semibold tracking-wide bg-primary text-primary-foreground hover:brightness-110 transition-all duration-200"
           >
             קבע תור
@@ -77,8 +74,6 @@ const Navbar = () => {
             ))}
             <a
               href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="mt-2 px-6 py-3 text-sm font-semibold tracking-wide bg-primary text-primary-foreground text-center"
             >
               קבע תור
