@@ -3,18 +3,18 @@ import { useInView } from "@/hooks/useInView";
 
 const testimonials = [
   {
-    name: "David M.",
-    text: "Best barber I've ever been to. Ariel pays attention to every detail and always delivers exactly what I want.",
+    name: "דוד מ.",
+    text: "הספר הכי טוב שהייתי אצלו. אריאל שם לב לכל פרט ותמיד מספק בדיוק את מה שאני רוצה.",
     rating: 5,
   },
   {
-    name: "Yoav R.",
-    text: "The atmosphere is amazing and the results speak for themselves. I won't go anywhere else.",
+    name: "יואב ר.",
+    text: "האווירה מדהימה והתוצאות מדברות בעד עצמן. אני לא הולך לשום מקום אחר.",
     rating: 5,
   },
   {
-    name: "Michael S.",
-    text: "Professional, friendly, and incredibly skilled. Every visit feels like a premium experience.",
+    name: "מיכאל ש.",
+    text: "מקצועי, ידידותי ומיומן להפליא. כל ביקור מרגיש כמו חוויה פרימיום.",
     rating: 5,
   },
 ];
@@ -25,9 +25,9 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="section-padding bg-secondary" ref={ref}>
       <div className="container mx-auto text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-primary font-body mb-4">Testimonials</p>
+        <p className="text-sm tracking-[0.3em] text-primary font-body mb-4">המלצות</p>
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-          What Clients <span className="gold-gradient-text">Say</span>
+          מה הלקוחות <span className="gold-gradient-text">אומרים</span>
         </h2>
         <div className="gold-line mx-auto mb-12" />
 
@@ -35,10 +35,10 @@ const TestimonialsSection = () => {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`bg-card border border-border p-8 text-left ${inView ? "animate-fade-in" : "opacity-0"}`}
+              className={`bg-card border border-border p-8 text-right ${inView ? "animate-fade-in" : "opacity-0"}`}
               style={{ animationDelay: `${i * 0.15}s` }}
             >
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-4 justify-end">
                 {Array.from({ length: t.rating }).map((_, j) => (
                   <Star key={j} className="w-4 h-4 fill-primary text-primary" />
                 ))}

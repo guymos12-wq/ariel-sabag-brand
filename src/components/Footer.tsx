@@ -7,7 +7,7 @@ const Footer = () => (
   <footer className="border-t border-border py-10 px-4">
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <a href="#home" className="font-heading text-lg tracking-wider gold-gradient-text">
-        ARIEL SABAG BARBERSHOP
+        אריאל סבג ברברשופ
       </a>
 
       <div className="flex items-center gap-6">
@@ -16,7 +16,7 @@ const Footer = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground/50 hover:text-primary transition-colors"
-          aria-label="Instagram"
+          aria-label="אינסטגרם"
         >
           <Instagram className="w-5 h-5" />
         </a>
@@ -24,14 +24,14 @@ const Footer = () => (
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm uppercase tracking-widest text-foreground/50 hover:text-primary transition-colors"
+          className="text-sm tracking-widest text-foreground/50 hover:text-primary transition-colors"
         >
-          Book Now
+          קבע תור
         </a>
       </div>
 
       <p className="text-xs text-foreground/30">
-        © {new Date().getFullYear()} Ariel Sabag Barbershop. All rights reserved.
+        © {new Date().getFullYear()} אריאל סבג ברברשופ. כל הזכויות שמורות.
       </p>
     </div>
   </footer>
