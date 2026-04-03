@@ -1,6 +1,5 @@
 import heroImage from "@/assets/hero-barber.jpg";
-
-const BOOKING_URL = "https://l.instagram.com/?u=https%3A%2F%2Fcalendar.app.google%2Fv6WZoeHaFuPQ1jsN7%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnxs7JORNFwg6I_KlbMMQsCRKwe6ipeWlvf7KziEDJtkKY7EJhP5rMV7Z6kes_aem_-q2Yn2Hvw7F6BHWjrZLCWQ&e=AT4JC79pbocBNIWEVXr_e0hewO7PPlr8UaNNspXzpGKR55MFbEq8E58DwfRAITb-VNahe36RkK92oPzMx2iHaGBoLRN_eLmJmbFfwYxlNXf_2fYR8U2cY-YS3w";
+import { BOOKING_URL } from "@/lib/site-links";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -24,8 +23,6 @@ const HeroSection = () => (
       </p>
       <a
         href={BOOKING_URL}
-        target="_blank"
-        rel="noopener noreferrer"
         className="inline-block px-10 py-4 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300 opacity-0 animate-fade-in"
         style={{ animationDelay: "0.8s" }}
       >
