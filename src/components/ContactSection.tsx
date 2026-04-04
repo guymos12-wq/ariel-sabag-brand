@@ -1,7 +1,6 @@
 import { Phone, MapPin, Clock, Instagram } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
-
-const INSTAGRAM_URL = "https://www.instagram.com/a_sabag_barbershop/";
+import { INSTAGRAM_URL, openExternalLink } from "@/lib/site-links";
 
 const contactItems = [
   { icon: Phone, label: "טלפון", value: "050-123-4567" },
@@ -31,14 +30,13 @@ const ContactSection = () => {
           ))}
         </div>
 
-        <a
-          href={INSTAGRAM_URL}
-          target="_top"
-          className="inline-flex items-center gap-2 text-primary hover:brightness-125 transition-all text-sm tracking-widest"
+        <button
+          onClick={() => openExternalLink(INSTAGRAM_URL)}
+          className="inline-flex items-center gap-2 text-primary hover:brightness-125 transition-all text-sm tracking-widest cursor-pointer bg-transparent border-none"
         >
           <Instagram className="w-5 h-5" />
           @a_sabag_barbershop
-        </a>
+        </button>
       </div>
     </section>
   );

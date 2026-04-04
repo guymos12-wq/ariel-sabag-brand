@@ -1,7 +1,5 @@
 import { Instagram } from "lucide-react";
-import { BOOKING_URL } from "@/lib/site-links";
-
-const INSTAGRAM_URL = "https://www.instagram.com/a_sabag_barbershop/";
+import { BOOKING_URL, INSTAGRAM_URL, openExternalLink } from "@/lib/site-links";
 
 const Footer = () => (
   <footer className="border-t border-border py-10 px-4">
@@ -11,14 +9,13 @@ const Footer = () => (
       </a>
 
       <div className="flex items-center gap-6">
-        <a
-          href={INSTAGRAM_URL}
-          target="_top"
-          className="text-foreground/50 hover:text-primary transition-colors"
+        <button
+          onClick={() => openExternalLink(INSTAGRAM_URL)}
+          className="text-foreground/50 hover:text-primary transition-colors bg-transparent border-none cursor-pointer p-0"
           aria-label="אינסטגרם"
         >
           <Instagram className="w-5 h-5" />
-        </a>
+        </button>
         <a
           href={BOOKING_URL}
           className="text-sm tracking-widest text-foreground/50 hover:text-primary transition-colors"
