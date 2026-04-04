@@ -1,7 +1,6 @@
 import { Instagram } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
-
-const INSTAGRAM_URL = "https://www.instagram.com/a_sabag_barbershop/";
+import { INSTAGRAM_URL, openExternalLink } from "@/lib/site-links";
 
 const GallerySection = () => {
   const { ref, inView } = useInView();
@@ -16,9 +15,9 @@ const GallerySection = () => {
         <div className="gold-line mx-auto mb-8" />
         <p className="text-foreground/60 mb-10 max-w-lg mx-auto">
           צפו בתספורות והסגנונות האחרונים. עקבו אחרי{" "}
-          <a href={INSTAGRAM_URL} target="_top" className="text-primary hover:underline">
+          <button onClick={() => openExternalLink(INSTAGRAM_URL)} className="text-primary hover:underline bg-transparent border-none cursor-pointer p-0 font-inherit text-inherit">
             @a_sabag_barbershop
-          </a>{" "}
+          </button>{" "}
           להשראה יומית.
         </p>
 
@@ -26,14 +25,13 @@ const GallerySection = () => {
           <div className="bg-card border border-border p-8 md:p-12 flex flex-col items-center gap-6">
             <Instagram className="w-16 h-16 text-primary" />
             <p className="text-foreground/70 text-lg">צפו בעבודות האחרונות באינסטגרם</p>
-            <a
-              href={INSTAGRAM_URL}
-              target="_top"
-              className="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300"
+            <button
+              onClick={() => openExternalLink(INSTAGRAM_URL)}
+              className="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300 border-none cursor-pointer"
             >
               <Instagram className="w-4 h-4" />
               לאינסטגרם
-            </a>
+            </button>
           </div>
         </div>
       </div>
