@@ -16,7 +16,7 @@ const GallerySection = () => {
         <div className="gold-line mx-auto mb-8" />
         <p className="text-foreground/60 mb-10 max-w-lg mx-auto">
           צפו בתספורות והסגנונות האחרונים. עקבו אחרי{" "}
-          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+          <a href={INSTAGRAM_URL} className="text-primary hover:underline">
             @a_sabag_barbershop
           </a>{" "}
           להשראה יומית.
