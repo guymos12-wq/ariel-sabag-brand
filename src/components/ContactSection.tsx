@@ -33,8 +33,6 @@ const ContactSection = () => {
 
         <a
           href={INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-primary hover:brightness-125 transition-all text-sm tracking-widest"
         >
           <Instagram className="w-5 h-5" />

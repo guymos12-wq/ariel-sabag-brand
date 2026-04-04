@@ -28,8 +28,6 @@ const GallerySection = () => {
             <p className="text-foreground/70 text-lg">צפו בעבודות האחרונות באינסטגרם</p>
             <a
               href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300"
             >
               <Instagram className="w-4 h-4" />
