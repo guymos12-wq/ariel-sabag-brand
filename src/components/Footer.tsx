@@ -13,6 +13,7 @@ const Footer = () => (
       <div className="flex items-center gap-6">
         <a
           href={INSTAGRAM_URL}
+          target="_top"
           className="text-foreground/50 hover:text-primary transition-colors"
           aria-label="אינסטגרם"
         >
