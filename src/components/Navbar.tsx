@@ -5,6 +5,7 @@ import { BOOKING_URL } from "@/lib/site-links";
 const navLinks = [
   { label: "בית", href: "#home" },
   { label: "אודות", href: "#about" },
+  { label: "ניסיון", href: "#experience" },
   { label: "שירותים", href: "#services" },
   { label: "מחירון", href: "#pricing" },
   { label: "גלריה", href: "#gallery" },
