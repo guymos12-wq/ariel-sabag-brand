@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-barber.jpg";
+import heroImage from "@/assets/hero-barber.png";
 import { BOOKING_URL } from "@/lib/site-links";
 
 const HeroSection = () => (
