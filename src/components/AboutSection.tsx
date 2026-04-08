@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/about-barber.jpg";
+import aboutImage from "@/assets/about-barber.png";
 import { useInView } from "@/hooks/useInView";
 
 const AboutSection = () => {
