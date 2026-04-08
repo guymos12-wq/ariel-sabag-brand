@@ -6,8 +6,9 @@ const navLinks = [
   { label: "בית", href: "#home" },
   { label: "אודות", href: "#about" },
   { label: "שירותים", href: "#services" },
+  { label: "מחירון", href: "#pricing" },
   { label: "גלריה", href: "#gallery" },
-  { label: "המלצות", href: "#testimonials" },
+  { label: "ביקורות", href: "#reviews" },
   { label: "צור קשר", href: "#contact" },
 ];
 

@@ -3,9 +3,9 @@ import { useInView } from "@/hooks/useInView";
 import { INSTAGRAM_URL, openExternalLink } from "@/lib/site-links";
 
 const contactItems = [
-  { icon: Phone, label: "טלפון", value: "050-123-4567" },
-  { icon: MapPin, label: "כתובת", value: "רחוב הראשי 123, תל אביב" },
-  { icon: Clock, label: "שעות פעילות", value: "א׳–ה׳ 9:00–20:00 | ו׳ 9:00–14:00" },
+  { icon: Phone, label: "טלפון", value: "054-270-9090" },
+  { icon: MapPin, label: "כתובת", value: "אלומות 14/1, זכרון יעקב" },
+  { icon: Clock, label: "שעות פעילות", value: "התורים נפתחים מחדש כל שבוע" },
 ];
 
 const ContactSection = () => {

@@ -23,17 +23,14 @@ const AboutSection = () => {
             האומנות של <span className="gold-gradient-text">התספורת המושלמת</span>
           </h2>
           <div className="gold-line mb-6" />
-          <p className="text-foreground/70 leading-relaxed mb-4">
-            עם שנים של ניסיון מאחורי הכיסא, אריאל סבג שיכלל את המלאכה שלו כדי לספק תספורות מדויקות
-            ושירותי טיפוח שגורמים לכל לקוח להיראות ולהרגיש במיטבו.
+          <p className="text-foreground/70 leading-relaxed mb-4 text-lg">
+            ספר צעיר עם ניסיון של מעל שנתיים ואלפי לקוחות מרוצים 💈
           </p>
           <p className="text-foreground/70 leading-relaxed mb-4">
-            כל תספורת היא חוויה אישית. אריאל לוקח את הזמן להבין את הסגנון שלך, צורת הפנים
-            ואורח החיים כדי ליצור מראה שהוא ייחודי לך.
+            מתמחה בתספורות מדויקות, פיידים חדים ושירות ברמה גבוהה.
           </p>
-          <p className="text-foreground/70 leading-relaxed">
-            מפייד קלאסי ועד סגנונות מודרניים, עיצוב זקן ועד טיפוח מלא — אל תצפו לפחות
-            מאיכות יוצאת דופן ותשומת לב לפרטים.
+          <p className="text-foreground/70 leading-relaxed mb-4">
+            התורים נפתחים מחדש כל שבוע – ממליץ למהר ולתפוס מקום ⚡️
           </p>
         </div>
       </div>
