@@ -1,43 +1,21 @@
-import heroImage from "@/assets/hero-barber.png";
 import logo from "@/assets/logo.png";
 import { BOOKING_URL } from "@/lib/site-links";
 
 const HeroSection = () => (
-  <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <img
-      src={heroImage}
-      alt="מספרה מקצועית"
-      width={1920}
-      height={1080}
-      className="absolute inset-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0" style={{ background: "var(--dark-overlay)" }} />
-
-    {/* Logo as large background watermark */}
+  <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
     <img
       src={logo}
-      alt=""
-      aria-hidden="true"
-      className="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none p-16 md:p-32"
+      alt="Ariel Sabag Barbershop"
+      className="absolute inset-0 w-full h-full object-contain p-12 md:p-24 lg:p-32 opacity-20 pointer-events-none"
     />
 
-    <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-      <div className="gold-line mx-auto mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }} />
-      <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-        דיוק. סטייל.{" "}
-        <span className="gold-gradient-text">ביטחון.</span>
-      </h1>
-      <p className="font-body text-base md:text-lg text-foreground/70 tracking-wide mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-        תספורות וטיפוח מקצועי על ידי אריאל סבג
-      </p>
+    <div className="relative z-10 text-center">
       <a
         href={BOOKING_URL}
-        className="inline-block px-10 py-4 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300 opacity-0 animate-fade-in"
-        style={{ animationDelay: "0.8s" }}
+        className="inline-block px-12 py-4 text-sm font-semibold tracking-widest bg-primary text-primary-foreground hover:brightness-110 hover:scale-105 transition-all duration-300 animate-fade-in"
       >
         קבע תור עכשיו
       </a>
-      <div className="gold-line mx-auto mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "1s" }} />
     </div>
   </section>
 );
