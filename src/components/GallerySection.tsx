@@ -4,6 +4,7 @@ import haircut2 from "@/assets/haircut-2.png";
 import haircut3 from "@/assets/haircut-3.png";
 import haircut4 from "@/assets/haircut-4.png";
 import haircut5 from "@/assets/haircut-5.png";
+import haircut6 from "@/assets/haircut-6.png";
 
 const haircuts = [
   { src: haircut1, alt: "תספורת לקוח מרוצה 1" },
@@ -11,6 +12,7 @@ const haircuts = [
   { src: haircut3, alt: "תספורת לקוח מרוצה 3" },
   { src: haircut4, alt: "תספורת לקוח מרוצה 4" },
   { src: haircut5, alt: "תספורת לקוח מרוצה 5" },
+  { src: haircut6, alt: "תספורת לקוח מרוצה 6" },
 ];
 
 const GallerySection = () => {
