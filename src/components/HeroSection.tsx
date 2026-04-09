@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-barber.png";
+import logo from "@/assets/logo.png";
 import { BOOKING_URL } from "@/lib/site-links";
 
 const HeroSection = () => (
@@ -13,7 +14,12 @@ const HeroSection = () => (
     <div className="absolute inset-0" style={{ background: "var(--dark-overlay)" }} />
 
     <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-      <div className="gold-line mx-auto mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }} />
+      <img
+        src={logo}
+        alt="Ariel Sabag Barbershop"
+        className="w-32 md:w-44 mx-auto mb-8 opacity-0 animate-fade-in"
+        style={{ animationDelay: "0.2s" }}
+      />
       <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
         דיוק. סטייל.{" "}
         <span className="gold-gradient-text">ביטחון.</span>
@@ -28,7 +34,6 @@ const HeroSection = () => (
       >
         קבע תור עכשיו
       </a>
-      <div className="gold-line mx-auto mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "1s" }} />
     </div>
   </section>
 );

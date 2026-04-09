@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { BOOKING_URL } from "@/lib/site-links";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "בית", href: "#home" },
@@ -29,9 +30,9 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#home" className="font-heading text-xl md:text-2xl tracking-wider gold-gradient-text">
-          אריאל סבג
+      <div className="container mx-auto flex items-center justify-between py-3">
+        <a href="#home" className="flex items-center">
+          <img src={logo} alt="Ariel Sabag Barbershop" className="h-10 md:h-12 w-auto" />
         </a>
 
         <div className="hidden lg:flex items-center gap-8">
