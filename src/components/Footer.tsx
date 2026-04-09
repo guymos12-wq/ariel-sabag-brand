@@ -1,11 +1,12 @@
 import { Instagram } from "lucide-react";
 import { BOOKING_URL, INSTAGRAM_URL, openExternalLink } from "@/lib/site-links";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="border-t border-border py-10 px-4">
-    <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <a href="#home" className="font-heading text-lg tracking-wider gold-gradient-text">
-        אריאל סבג ברברשופ
+    <div className="container mx-auto flex flex-col items-center gap-6">
+      <a href="#home">
+        <img src={logo} alt="Ariel Sabag Barbershop" className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity" />
       </a>
 
       <div className="flex items-center gap-6">
@@ -25,7 +26,7 @@ const Footer = () => (
       </div>
 
       <p className="text-xs text-foreground/30">
-        © {new Date().getFullYear()} אריאל סבג ברברשופ. כל הזכויות שמורות.
+        © {new Date().getFullYear()} Ariel Sabag Barbershop. כל הזכויות שמורות.
       </p>
     </div>
   </footer>
