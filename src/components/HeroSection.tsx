@@ -13,13 +13,16 @@ const HeroSection = () => (
     />
     <div className="absolute inset-0" style={{ background: "var(--dark-overlay)" }} />
 
+    {/* Logo as large background watermark */}
+    <img
+      src={logo}
+      alt=""
+      aria-hidden="true"
+      className="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none p-16 md:p-32"
+    />
+
     <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-      <img
-        src={logo}
-        alt="Ariel Sabag Barbershop"
-        className="w-32 md:w-44 mx-auto mb-8 opacity-0 animate-fade-in"
-        style={{ animationDelay: "0.2s" }}
-      />
+      <div className="gold-line mx-auto mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }} />
       <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
         דיוק. סטייל.{" "}
         <span className="gold-gradient-text">ביטחון.</span>
@@ -34,6 +37,7 @@ const HeroSection = () => (
       >
         קבע תור עכשיו
       </a>
+      <div className="gold-line mx-auto mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "1s" }} />
     </div>
   </section>
 );
